@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM1"  parallel="tests">
+  <test name="On firefox">
+   <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.orangehrm.testsuite1.LoginTest"/>
+      <class name="com.orangehrm.testsuite1.AddEmployee"/>
+      <class name="com.orangehrm.testsuite1.Screenshot"/>
+      <class name="com.orangehrm.testsuite1.Logout"/>
+        </classes>
+      </test>
+     <test name="On chrome">
+   <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.orangehrm.testsuite1.LoginTest"/>
+      <class name="com.orangehrm.testsuite1.AddEmployee"/>
+      <class name="com.orangehrm.testsuite1.Screenshot"/>
+      <class name="com.orangehrm.testsuite1.Logout"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
